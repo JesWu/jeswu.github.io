@@ -160,7 +160,7 @@ hr {
 
 .hov-text {
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 5vw;
   color: transparent;
   text-shadow: 3px 3px var(--text-color);
   cursor: default;
