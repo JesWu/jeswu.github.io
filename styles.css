@@ -8,15 +8,20 @@ body {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  --main-bg-color: rgb(241, 253, 239);
-  --text-color: #2e4a42;
-  --pastel-blue: #92cccc;
-  --pastel-green: #c3deba;
-  --secondary-bg-color: rgb(217, 242, 231);
+  --main-bg-color: rgb(0, 0, 0);
+  --text-color: #ffffff;
+  --secondary-text-color: #f2f2f2;
+  --grey-dark: #464646;
+  --grey-light: #979797;
+  --secondary-bg-color: rgb(64, 64, 64);
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom right, #92cccc, #c3deba);
+  background: rgb(64, 64, 64);
   overflow: hidden;
+}
+
+strong {
+  color: var(--secondary-text-color);
 }
 
 .content {
@@ -168,8 +173,8 @@ hr {
   text-wrap: nowrap;
   background-image: linear-gradient(
     to right,
-    var(--pastel-blue),
-    var(--pastel-green)
+    var(--grey-dark),
+    var(--grey-light)
   );
   background-clip: text;
 }
@@ -213,6 +218,10 @@ hr {
 
 .card > * {
   margin-top: 0;
+}
+
+.card-inner {
+  margin: 0rem 1rem;
 }
 
 @keyframes fade {
